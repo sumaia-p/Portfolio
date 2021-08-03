@@ -160,7 +160,7 @@ if option == "Machine Learning Projects":
 
     menu = ["NLP as a Service", "AI for Improving Road Safety in Bangladesh", "Cloud Instance Price Prediction", "Clustering of Geographic Locations", "Natural Language Processing with spaCy",\
     "Binary-Classification of Health Conditions", "Prediction of Air Quality Index of Los Angeles", "Prediction of Life Expectancy from Socio-Economic Factors"]
-    choice = st.selectbox("", menu)
+    choice = st.selectbox("Select ML projects from below", menu)
 
     #if choice == 'NLP as a Service':
         #tfg_aws_pred()
