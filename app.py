@@ -3,6 +3,14 @@ import streamlit.components.v1 as components
 import base64
 import datetime
 
+def nlpaas():
+
+    st.subheader('NLP as a Service')
+    d1 = st.date_input("", [datetime.date(2021, 6, 10), datetime.date(2021, 10, 14)])
+
+    st.write('This open-source project utilizes open-source AutoML and state-of-art packages to provide users a free and codeless experience of getting ML models and/or results for their data. Users only need to upload the data, select the type of Natural Language Processing task (Keyword Extraction- keyBERT, YAKE, PKE, RAKE; Topic Modelling- Latent Dirichlet Allocation, Hierarchical Dirichlet Process, Non-negative Matrix Factorization; Sentiment Analysis- autoVIML, BERT) and target columns to get the results.')
+    st.write('[See in detail on GitHub](https://github.com/SumaiaParveen/Natural-Language-Processing)')
+
 def road_safety():
 
     st.subheader('AI for Improving Road Safety in Bangladesh')
@@ -16,7 +24,7 @@ def road_safety():
     st.markdown("- Folium Heatmaps with Time Lapse.")
     st.markdown("- Flourish Visualizations: Bar chart race showing top 15 days with most death caused by road accidents, complete statistical analysis dashboard.")
 
-    st.write('- [See in detail on GitHub](https://github.com/SumaiaParveen/Omdena-AI-for-Road-Safety-In-Bangladesh)')
+    st.write('[See in detail on GitHub](https://github.com/SumaiaParveen/Omdena-AI-for-Road-Safety-In-Bangladesh)')
 
 def tfg_aws_pred():
 
@@ -145,9 +153,11 @@ def life_exp():
     st.write("**Libraries and frameworks**: Pandas, Numpy, Missingno, Matplotlib, Seaborn, Sklearn, Scipy, Lazypreict, Yellowbrick, Pillow, Streamlit, Heroku")
     st.write('[See in detail on GitHub](https://github.com/SumaiaParveen/Lifespan-Prediction-using-ExtraTrees)')
 
-#st.sidebar.image("wc (2).png", use_column_width=True)
+st.sidebar.image("IMG_.JPG", width = 250)
 
-option = st.sidebar.selectbox('Select from below', ( "Machine Learning Projects", "Passion for Data Analysis", 'Tableau Dashboards', "Flourish Viz"))
+st.sidebar.markdown('Hi, this is Sumaia P Shupti, an AI & Analytics Enthusiast. Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/sumaia-p/).')
+
+option = st.sidebar.selectbox('Select from below to view in detail-', ( "Machine Learning Projects", "Passion for Data Analysis", 'Tableau Dashboards', "Flourish Viz"))
 
 
 ###################
@@ -162,8 +172,8 @@ if option == "Machine Learning Projects":
     "Binary-Classification of Health Conditions", "Prediction of Air Quality Index of Los Angeles", "Prediction of Life Expectancy from Socio-Economic Factors"]
     choice = st.selectbox("Select ML projects from below", menu)
 
-    #if choice == 'NLP as a Service':
-        #tfg_aws_pred()
+    if choice == 'NLP as a Service':
+        nlpaas()
 
     if choice == 'AI for Improving Road Safety in Bangladesh':
         road_safety()
