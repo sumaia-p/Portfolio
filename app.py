@@ -8,7 +8,7 @@ def nlpaas():
     st.subheader('NLP as a Service')
     d1 = st.date_input("", [datetime.date(2021, 6, 10), datetime.date(2021, 10, 14)])
 
-    st.write('This open-source project utilizes open-source AutoML and state-of-art packages to provide users a free and codeless experience of getting ML models and/or results for their data. Users only need to upload the data, select the type of Natural Language Processing task (Keyword Extraction- keyBERT, YAKE, PKE, RAKE; Topic Modelling- Latent Dirichlet Allocation, Hierarchical Dirichlet Process, Non-negative Matrix Factorization; Sentiment Analysis- autoVIML, BERT) and target columns to get the results.')
+    st.write('This open-source project utilizes open-source AutoML and state-of-art packages to provide users a free and codeless experience of getting ML models and/or results for their data. Users only need to upload the data, select the type of Natural Language Processing task (Keyword Extraction- keyBERT, YAKE, PKE, RAKE; Topic Modelling- Latent Dirichlet Allocation, Hierarchical Dirichlet Process, Non-negative Matrix Factorization; Sentiment Analysis- autoVIML, BERT, rule-based: TextBlob, Vader, SentiWordNet) and target columns to get the results.')
     st.write('[See in detail on GitHub](https://github.com/SumaiaParveen/Natural-Language-Processing)')
 
 def road_safety():
